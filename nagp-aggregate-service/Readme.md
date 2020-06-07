@@ -33,6 +33,7 @@ create database nagp_test
 mvn package
 java -jar target/nagp-aggregate-service-1.0.0.jar
 ```
+./mvnw package && java -jar target/napg-aggregate-service-0.1.0.jar
 
 Alternatively, you can run the app without packaging it using -
 
@@ -45,17 +46,7 @@ The app will start running at <http://localhost:8082>.
 ## Explore Rest APIs
 
 The app defines following CRUD APIs.
-
-    GET     orders
-
-    GET     orders/users/{userId}
-    
-    POST    orders
-    
-    GET     orders/{orderId}
-    
-    PUT     orders/{orderId}
-    
-    DELETE  orders/{orderId}
+=
+    GET     orderdetails/{userId}
 
 You can test them using postman or any other rest client.

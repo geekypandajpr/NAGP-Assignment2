@@ -32,6 +32,9 @@ mvn package
 java -jar target/nagp-user-service-1.0.0.jar
 ```
 
+
+./mvnw package && java -jar target/napg-user-service-0.1.0.jar
+
 Alternatively, you can run the app without packaging it using -
 
 ```bash

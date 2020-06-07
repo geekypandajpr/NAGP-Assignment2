@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.nagp.assignment</groupId>
-	<artifactId>nagp-assignment</artifactId>
+	<groupId>com.nagp.order</groupId>
+	<artifactId>nagp-order-service</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>easy-notes</name>
-	<description>Rest API for a Simple User Info</description>
+	<name>napg-order-service</name>
+	<description>Rest API for a Simple Order Info</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
