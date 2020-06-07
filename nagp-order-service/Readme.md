@@ -1,7 +1,4 @@
-# Spring Boot, MySQL, JPA, Hibernate Rest API Tutorial
-
-Build Restful CRUD API for a simple Note-Taking application using Spring Boot, Mysql, JPA and Hibernate.
-
+# Spring Boot, MySQL, JPA, Hibernate Rest nagp-order-servicee
 ## Requirements
 
 1. Java - 1.8.x
@@ -15,12 +12,13 @@ Build Restful CRUD API for a simple Note-Taking application using Spring Boot, M
 **1. Clone the application**
 
 ```bash
-git clone https://github.com/callicoder/spring-boot-mysql-rest-api-tutorial.git
+git clone https://github.com/geekypandajpr/NAGP-Assignment2.git
+cd nagp-order-service
 ```
 
 **2. Create Mysql database**
 ```bash
-create database notes_app
+create database nagp_test
 ```
 
 **3. Change mysql username and password as per your installation**
@@ -33,7 +31,7 @@ create database notes_app
 
 ```bash
 mvn package
-java -jar target/easy-notes-1.0.0.jar
+java -jar target/nagp-order-service-1.0.0.jar
 ```
 
 Alternatively, you can run the app without packaging it using -
@@ -42,26 +40,22 @@ Alternatively, you can run the app without packaging it using -
 mvn spring-boot:run
 ```
 
-The app will start running at <http://localhost:8080>.
+The app will start running at <http://localhost:8082>.
 
 ## Explore Rest APIs
 
 The app defines following CRUD APIs.
 
-    GET /api/notes
+    GET     orders
+
+    GET     orders/users/{userId}
     
-    POST /api/notes
+    POST    orders
     
-    GET /api/notes/{noteId}
+    GET     orders/{orderId}
     
-    PUT /api/notes/{noteId}
+    PUT     orders/{orderId}
     
-    DELETE /api/notes/{noteId}
+    DELETE  orders/{orderId}
 
 You can test them using postman or any other rest client.
-
-## Learn more
-
-You can find the tutorial for this application on my blog -
-
-<https://www.callicoder.com/spring-boot-rest-api-tutorial-with-mysql-jpa-hibernate/>
